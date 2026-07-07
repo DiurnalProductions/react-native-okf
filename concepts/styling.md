@@ -1,15 +1,14 @@
 ---
-id: react-native.styling
-type: concept
+type: Concept
 title: Styling
-description: StyleSheet, Flexbox layout, and platform-specific appearance in React Native
+description: "StyleSheet, Flexbox layout, and platform-specific appearance in React Native"
 tags: [react-native, styling, layout, flexbox]
 prerequisites:
-  - react-native.components
+  - concepts/components
 related:
-  - react-native.core-components
-  - react-native.performance
-resource: https://reactnative.dev/docs/style
+  - concepts/core-components
+  - concepts/performance
+resource: "https://reactnative.dev/docs/style"
 timestamp: 2026-01-01
 ---
 

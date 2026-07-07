@@ -1,21 +1,20 @@
 ---
-id: react-native.navigation
-type: concept
+type: Concept
 title: Navigation
-description: Screen stacks, route parameters, and deep linking in React Native apps
+description: "Screen stacks, route parameters, and deep linking in React Native apps"
 tags: [react-native, navigation, routing, screens]
 prerequisites:
-  - react-native.state-management
+  - concepts/state-management
 related:
-  - react-native.state-management
-  - react-native.performance
-resource: https://reactnavigation.org
-timestamp: 2026-01-01
+  - concepts/state-management
+  - concepts/performance
+resource: "https://reactnavigation.org"
+timestamp: 2026-07-06
 ---
 
 # Summary
 
-React Native has no built-in router. Navigation libraries (primarily React Navigation) manage a stack, tab, or drawer of screens backed by native navigation primitives. Screens are components; navigation state determines which screen is mounted and what params it receives.
+React Native has no built-in router. Navigation libraries — React Navigation directly, or Expo Router, a file-based routing layer built on top of it — manage a stack, tab, or drawer of screens backed by native navigation primitives. Screens are components; navigation state determines which screen is mounted and what params it receives.
 
 # Mental model
 

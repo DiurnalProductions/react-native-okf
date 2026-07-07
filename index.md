@@ -1,3 +1,12 @@
+---
+okf_version: "0.1"
+id: react-native-okf
+name: React Native Knowledge Pack
+version: "0.1"
+description: OKF knowledge base for React Native development
+tags: [react-native, mobile, javascript, ios, android]
+---
+
 # React Native Knowledge Pack
 
 A plug-and-play OKF knowledge bundle for learning React Native development. Install this repository into any OKF-compatible client to traverse concepts as a directed learning graph.

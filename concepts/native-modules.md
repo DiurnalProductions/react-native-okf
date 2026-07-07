@@ -1,15 +1,14 @@
 ---
-id: react-native.native-modules
-type: concept
+type: Concept
 title: Native Modules
 description: Exposing custom native code and platform-specific APIs to JavaScript
 tags: [react-native, native-modules, ios, android, turbo-modules]
 prerequisites:
-  - react-native.bridges
+  - concepts/bridges
 related:
-  - react-native.bridges
-  - react-native.performance
-resource: https://reactnative.dev/docs/native-modules-intro
+  - concepts/bridges
+  - concepts/performance
+resource: "https://reactnative.dev/docs/native-modules-intro"
 timestamp: 2026-01-01
 ---
 

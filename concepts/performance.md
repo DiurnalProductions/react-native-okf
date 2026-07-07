@@ -1,24 +1,23 @@
 ---
-id: react-native.performance
-type: concept
+type: Concept
 title: Performance
-description: Re-render costs, bridge overhead, and list virtualization in React Native
+description: "Re-render costs, bridge overhead, and list virtualization in React Native"
 tags: [react-native, performance, optimization, flatlist]
 prerequisites:
-  - react-native.navigation
-  - react-native.native-modules
-  - react-native.gestures
+  - concepts/navigation
+  - concepts/native-modules
+  - concepts/gestures
 related:
-  - react-native.architecture
-  - react-native.components
-  - react-native.bridges
-  - react-native.styling
-  - react-native.state-management
-  - react-native.navigation
-  - react-native.native-modules
-  - react-native.gestures
-resource: https://reactnative.dev/docs/performance
-timestamp: 2026-01-01
+  - concepts/architecture
+  - concepts/components
+  - concepts/bridges
+  - concepts/styling
+  - concepts/state-management
+  - concepts/navigation
+  - concepts/native-modules
+  - concepts/gestures
+resource: "https://reactnative.dev/docs/performance"
+timestamp: 2026-07-06
 ---
 
 # Summary
@@ -51,7 +50,7 @@ Memoization (`React.memo`, `useMemo`, `useCallback`) reduces reconcile and child
 
 Optimizing a feed screen conceptually:
 
-- Replace `ScrollView` + `map` with `FlatList`, providing `keyExtractor` and `getItemLayout` when row height is fixed.
+- Replace `ScrollView` + `map` with `FlatList` (or Shopify's `FlashList`, which recycles views and is markedly faster for long lists), providing `keyExtractor` and `getItemLayout` when row height is fixed.
 - Extract row to `memo`ized component; pass only `item.id` and primitives, not whole parent state.
 - Move images to fixed dimensions; use progressive loading and caching.
 - Use `InteractionManager.runAfterInteractions` to defer non-critical work after navigation transitions.

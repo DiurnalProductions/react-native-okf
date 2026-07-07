@@ -1,16 +1,15 @@
 ---
-id: react-native.core-components
-type: concept
+type: Concept
 title: Core Components
-description: Primitive native-backed UI elements — View, Text, Image, ScrollView
+description: "Primitive native-backed UI elements — View, Text, Image, ScrollView"
 tags: [react-native, components, ui, primitives]
 prerequisites:
-  - react-native.architecture
+  - concepts/architecture
 related:
-  - react-native.components
-  - react-native.styling
-  - react-native.performance
-resource: https://reactnative.dev/docs/components-and-apis
+  - concepts/components
+  - concepts/styling
+  - concepts/performance
+resource: "https://reactnative.dev/docs/components-and-apis"
 timestamp: 2026-01-01
 ---
 

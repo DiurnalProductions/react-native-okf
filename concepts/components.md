@@ -1,17 +1,16 @@
 ---
-id: react-native.components
-type: concept
+type: Concept
 title: React Native Components
-description: Building reusable UI through composition, props, and platform behavior
+description: "Building reusable UI through composition, props, and platform behavior"
 tags: [react-native, components, composition, ui]
 prerequisites:
-  - react-native.core-components
+  - concepts/core-components
 related:
-  - react-native.styling
-  - react-native.state-management
-  - react-native.gestures
-  - react-native.performance
-resource: https://reactnative.dev/docs/intro-react-native-components
+  - concepts/styling
+  - concepts/state-management
+  - concepts/gestures
+  - concepts/performance
+resource: "https://reactnative.dev/docs/intro-react-native-components"
 timestamp: 2026-01-01
 ---
 

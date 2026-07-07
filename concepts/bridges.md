@@ -1,21 +1,20 @@
 ---
-id: react-native.bridges
-type: concept
+type: Concept
 title: Bridges
-description: The JavaScript ↔ native communication layer and async messaging model
+description: "The JavaScript ↔ native communication layer and async messaging model"
 tags: [react-native, bridge, native, jsi]
 prerequisites:
-  - react-native.architecture
+  - concepts/architecture
 related:
-  - react-native.native-modules
-  - react-native.performance
-resource: https://reactnative.dev/docs/the-new-architecture/landing-page
-timestamp: 2026-01-01
+  - concepts/native-modules
+  - concepts/performance
+resource: "https://reactnative.dev/docs/the-new-architecture/landing-page"
+timestamp: 2026-07-06
 ---
 
 # Summary
 
-The bridge is the historical mechanism that serializes messages between the JavaScript runtime and native iOS/Android code. UI commands, layout results, and module invocations cross this boundary asynchronously. The New Architecture replaces much of the old bridge with JSI (JavaScript Interface) for synchronous, lower-overhead native access.
+The bridge is the historical mechanism that serializes messages between the JavaScript runtime and native iOS/Android code. UI commands, layout results, and module invocations cross this boundary asynchronously. The New Architecture replaces the bridge entirely with JSI (JavaScript Interface) for synchronous, lower-overhead native access. It became the default in React Native 0.76 ("bridgeless mode"); the Legacy Architecture was frozen in 0.80, became impossible to enable in 0.82 (Oct 2025), and its code is being deleted from the codebase since 0.84. The bridge model below is historical context, not something new code targets.
 
 # Mental model
 
@@ -70,7 +69,7 @@ When calling a native module method (legacy):
 - **Flooding the bridge** — Sending thousands of layout updates or animation steps per second from JS causes jank.
 - **Large payload serialization** — Passing huge arrays or binary blobs over the legacy bridge is slow; use shared buffers or file URIs.
 - **Calling UI APIs from wrong thread** — Native modules must dispatch UI mutations to the main thread.
-- **Ignoring New Architecture migration** — TurboModules and Fabric change performance profiles; test both during upgrades.
+- **Ignoring New Architecture migration** — TurboModules and Fabric are the default; libraries still requiring the legacy bridge (interop layer aside) are a growing liability.
 
 # Related concepts
 

@@ -1,14 +1,13 @@
 ---
-id: react-native.gestures
-type: concept
+type: Concept
 title: Gestures
-description: Touch handling, gesture responders, and interaction primitives in React Native
+description: "Touch handling, gesture responders, and interaction primitives in React Native"
 tags: [react-native, gestures, touch, interaction]
 prerequisites:
-  - react-native.components
+  - concepts/components
 related:
-  - react-native.performance
-resource: https://reactnative.dev/docs/gesture-responder-system
+  - concepts/performance
+resource: "https://reactnative.dev/docs/gesture-responder-system"
 timestamp: 2026-01-01
 ---
 

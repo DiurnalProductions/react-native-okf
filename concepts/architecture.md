@@ -1,21 +1,19 @@
 ---
-id: react-native.architecture
-type: concept
+type: Concept
 title: React Native Architecture
-description: JavaScript runtime, native rendering pipeline, and the bridge model
+description: "JavaScript runtime, native rendering pipeline, and the bridge model"
 tags: [react-native, architecture, bridge, rendering]
-prerequisites: []
 related:
-  - react-native.core-components
-  - react-native.bridges
-  - react-native.performance
-resource: https://reactnative.dev/docs/architecture-overview
-timestamp: 2026-01-01
+  - concepts/core-components
+  - concepts/bridges
+  - concepts/performance
+resource: "https://reactnative.dev/docs/architecture-overview"
+timestamp: 2026-07-06
 ---
 
 # Summary
 
-React Native runs JavaScript in a separate runtime (Hermes or JavaScriptCore) while UI is rendered by native iOS and Android views. React reconciles a virtual tree in JavaScript; layout and painting happen on the native side. This is fundamentally different from React DOM, where the browser owns both the runtime and the rendering surface.
+React Native runs JavaScript in a separate runtime (Hermes, the default engine) while UI is rendered by native iOS and Android views. React reconciles a virtual tree in JavaScript; layout and painting happen on the native side. This is fundamentally different from React DOM, where the browser owns both the runtime and the rendering surface.
 
 # Mental model
 
@@ -47,7 +45,7 @@ A screen component conceptually:
 - The native renderer applies only the delta — new views, updated styles, removed nodes.
 - User interaction on the native thread invokes your `onPress` handler asynchronously on the JS thread.
 
-With the **New Architecture** (Fabric + TurboModules), much of this crosses via JSI with lower serialization overhead, but the two-thread mental model still applies.
+With the **New Architecture** (Fabric + TurboModules) — the default since React Native 0.76 and the only architecture from 0.82 onward — this crosses via JSI with lower serialization overhead, and Fabric can render some updates synchronously (e.g. for `useLayoutEffect` measurements). Hermes remains the engine, with Hermes V1 rolling out. The two-thread mental model still applies.
 
 # Common mistakes
 

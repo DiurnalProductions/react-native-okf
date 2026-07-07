@@ -1,8 +1,0 @@
-{
-  "id": "react-native-okf",
-  "name": "React Native Knowledge Pack",
-  "version": "0.1",
-  "description": "OKF knowledge base for React Native development",
-  "entry": "index.md",
-  "tags": ["react-native", "mobile", "javascript", "ios", "android"]
-}

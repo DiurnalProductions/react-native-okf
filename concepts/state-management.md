@@ -1,15 +1,14 @@
 ---
-id: react-native.state-management
-type: concept
+type: Concept
 title: State Management
-description: Local state, context, and external stores in React Native applications
+description: "Local state, context, and external stores in React Native applications"
 tags: [react-native, state, hooks, context]
 prerequisites:
-  - react-native.components
+  - concepts/components
 related:
-  - react-native.navigation
-  - react-native.performance
-resource: https://reactnative.dev/docs/state
+  - concepts/navigation
+  - concepts/performance
+resource: "https://reactnative.dev/docs/state"
 timestamp: 2026-01-01
 ---
 
